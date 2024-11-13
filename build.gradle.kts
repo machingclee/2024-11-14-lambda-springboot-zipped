@@ -26,6 +26,7 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("com.amazonaws.serverless:aws-serverless-java-container-springboot3:2.0.3")
 
 	implementation("com.amazonaws:aws-lambda-java-core:1.2.3")
