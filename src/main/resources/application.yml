@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: example
+  datasource:
+    url: jdbc:postgresql://<host>/<db-name>
+    username:
+    password:
+  jpa:
+    spring:
+      jpa:
+        properties:
+          hibernate:
+            boot:
+              allow_jdbc_metadata_access: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
